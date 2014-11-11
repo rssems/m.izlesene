@@ -92,12 +92,12 @@ a,a:hover {
  * ^sprite
  */
 .mobile_sprite {
-	background-image: url(../images/mspriteOptimized.png);
+	background-image: url(../images/mSprite.png);
 	background-repeat: no-repeat;
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5) {
 	.mobile_sprite {
-		background: url(../images/mspriteOptimized@2x.png);
+		background: url(../images/mSprite@2x.png);
 		-webkit-background-size:90px 70px;
 		-moz-background-size:90px 70px;
 		background-size:90px 70px;
@@ -134,8 +134,21 @@ header {
 		height: 26px;
 	}
 
-
-
+h1.title{
+	font-size: 17px;
+	color: #222222;
+	line-height: 40px;
+	text-align: center;
+	display: inline-block;
+}
+.noRightIcon{
+	width: 13px;
+	height: 20px;
+	margin: 10px 15px 0 0;
+	display: block;
+	float: right;
+	text-indent: -9999px;
+}
 /**
  * ^categories toggle
  */
@@ -149,7 +162,15 @@ header {
 	margin: 10px 0 0 10px;
 	float: left;
 }
-
+.icon-back{
+	background-position: -47px -30px;
+	width: 13px;
+	height: 20px;
+	margin:10px 0 0 15px;
+	display: block;
+	float: left;
+	text-indent: -9999px;
+}
 
 /**
  * ^navigation
@@ -212,7 +233,7 @@ nav, ul.m_top {
 /**
  * ^m_upload
  */
-.m_upload{
+/*.m_upload{
 	background-position: -46px -30px;
 	width: 31px;
 	height: 18px;
@@ -220,8 +241,28 @@ nav, ul.m_top {
 	text-indent: -9999px;
 	margin: 11px 10px 0 0;
 	float: right;
-}
+}*/
 
+/**
+ * ^loginButton
+ */
+.icon-login{
+	width: 26px;
+	height: 26px;
+	display: block;
+	margin: 6px 10px 0 0;
+	float: right;
+	border-radius: 13px;
+	overflow: hidden;
+}
+	.icon-login img{
+		width: 26px;
+		height: 26px;
+	}
+.mobile_sprite.icon-login{
+	background-position: -63px -30px;
+	text-indent: -9999px;
+}
 
 /**
  * ^search_button
@@ -346,8 +387,8 @@ section a.show_more {
 	background-color: #fff;
 	border: solid 1px #eee;
 	text-align: center;
-	padding: 8px 0 6px;
-	font-size: 11px;
+	padding: 14px 0 12px;
+	font-size: 12px;
 	font-weight: bold;
 	color: #aaa;
 	margin: 0 2% 12px;
@@ -404,19 +445,19 @@ section.main_video_preview {
 			}
 		}
 		section.main_video_preview .video_desc {
-			margin: 0 2%;
+			margin: 5px 2% 0 2%;
+			display: block;
 			font-size: 11px;
 		}
-
 			section.main_video_preview .video_desc h1 {
 				font-size: 14px;
 				color: #222;
-				margin: 0 5% 0 0;
+				/*margin: 0 5% 0 0;
 				width: 100%;
 				overflow: hidden;
 				white-space: nowrap;
 				overflow: hidden;
-				text-overflow: ellipsis;
+				text-overflow: ellipsis;*/
 			}
 
 
@@ -656,6 +697,33 @@ section.other_pages hgroup h2 {
 	margin:0 auto;
 }
 
+/*------------------------------------*\
+    $DESC
+\*------------------------------------*/
+.desc-toggle{
+	float: right;
+	padding: 5px 10px;
+	display: block;
+	margin:5px;
+	cursor: pointer;
+}
+	.desc-toggle span{
+		display: block;
+		width: 12px;
+		height: 6px;
+		background-position: -63px -57px;
+	}
+	.desc-toggle.active span{
+		background-position: -63px -64px;
+	}
+
+.video_desc p{
+	margin: 10px 0 0 0;
+	font-size: 12px;
+	color: #333;
+	max-height: 98px;
+	overflow: scroll;
+}
 
 
 /*------------------------------------*\

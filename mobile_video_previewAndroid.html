@@ -8,11 +8,119 @@
 </head>
 
 <body>
-<div class="fixedAd">
+<div class="googlePlay">
+	<a class="googlePlayLink" href="#https://play.google.com/store/apps/details?id=com.nokta.izlesene" title="İzlesene Google Play">
+		<span class="izleseneLogo"></span>
+		<span class="title">Daha iyi bir deneyim icin Android uygulamamiz indirebilirsiniz.</span>
+		<span class="icon-googlePlay"><span></span></span>
+	</a>
+	<a href="#2" class="goMobileWeb">MOBIL SITEYE DEVAM ET</a>
+	<div class="googlePlayOverlay"></div>
+</div>
+<style>
+.googlePlay{
+	z-index: 2;
+	background-color: rgba(255,255,255,.95);
+}
+	.googlePlay,
+	.googlePlay a.googlePlayLink,
+	.googlePlayOverlay,
+	.googlePlayOverlay:before{
+		position: fixed; 
+		top: 0; 
+		left: 0; 
+		width: 100%;
+		height: 100%;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.googlePlay a.googlePlayLink{
+		z-index: 10;
+		display: block;
+		padding-top: 40px;
+	}
+	.googlePlay a.goMobileWeb{
+		font-family: 'Roboto';
+		font-weight: bold;
+		font-size: 12px;
+		color: #4D4D4D;
+		line-height: 14px;
+		text-align: right;
+		padding: 20px;
+		position: absolute;
+		z-index: 20;
+		top: 0;
+		left: 0;
+		width: 100%;
+		display: block;
+		margin-left: -40px;
+		border-bottom:1px solid rgba(255,255,255,0.4);
+	}
+	.googlePlay span.title{
+		font-family: 'Roboto';
+		font-size:18px;
+		color: #222;
+		width: 85%;
+		margin: 30px auto;
+		display: block;
+		text-align: center;
+
+	}
+	.icon-googlePlay{
+		width: 151px;
+		height: 36px;
+		padding: 10px 20px;
+		border-radius: 6px;
+		background-color: #222;
+		display: block;
+		margin: 20px auto;
+	}
+		.icon-googlePlay:active{
+			background-color: #000;
+		}
+		.icon-googlePlay span{
+			webkit-background-size: 151px 36px;
+			-moz-background-size: 151px 36px;
+			background-size: 151px 36px;
+			background-image: url(images/googlePlay.png);
+			display: inline-block;
+			width: 151px;
+			height: 36px;
+		}
+		.izleseneLogo{
+			webkit-background-size: 60px 60px;
+			-moz-background-size: 60px 60px;
+			background-size: 60px 60px;
+			background-image: url(images/izleseneLogo.png);
+			display: block;
+			width: 60px;
+			height: 60px;
+			margin: 50px auto 0;
+		}
+	.googlePlayOverlay{
+		z-index: 1;
+		min-height: 100%;
+		background: url(images/bg.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+		.googlePlayOverlay:before{
+			content: "";
+			z-index: 2;
+			background-image: -o-linear-gradient(-89deg, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.85) 34%, #FFFFFF 100%);
+			background-image: -moz-linear-gradient(-89deg, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.85) 34%, #FFFFFF 100%);
+			background-image: -ms-linear-gradient(-89deg, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.85) 34%, #FFFFFF 100%);
+			background-image: linear-gradient(-179deg, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.85) 34%, #FFFFFF 100%);
+		}
+</style>
+
+<!-- <div class="fixedAd">
 	<div class="fixedAdElement">
 		REKLAM KODU BURAYA
-	</div><!-- fixedAdElement -->
-</div><!-- fixedAd -->
+	</div>
+</div> -->
 <header>
 	<nav>
 		<ul class="m_top" style="display: none; position: absolute; top: 40px; ">
@@ -47,62 +155,13 @@
 </div>
 <section class="main_video_preview">
 	<div class="video_preview">
-<!-- 	    <a href="#">
+	    <a href="#">
 	    <span class="playIcon"></span>
 	    	<img src="images/img1.jpg" alt="img" />
-	  	</a> -->
-	  	<div class="video_error">
-	  		<span class="icon-errorIz"></span>
-	  		<div class="headingA">"Sigara Icen Hamile Kadina Sizin Tepkiniz Nasil Olurdu?"</div>
-	  		<div class="headingB">baslikli video, telif hakki yuzunden artik kullanilmiyor.</div>
-	  	</div>
-	  	<style>
-	  	.video_error{
-	  		background-color: #000;
-	  		display: block;
-	  		padding: 40px 30px;
-	  	}
-			.icon-errorIz {
-				background-image: url(images/icon-error.png);
-				background-repeat: no-repeat;
-				width: 120px;
-				height: 124px;
-				display: block;
-				margin: 0 auto;
-			}
-			@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5) {
-				.icon-errorIz {
-					background: url(images/icon-error@2x.png);
-					-webkit-background-size:120px 124px;
-					-moz-background-size:120px 124px;
-					background-size:120px 124px;
-				}
-			}
-			.headingA,
-			.headingB{
-				text-align: center;
-				width: 100%;
-			}
-			.headingA{
-				color: #fa5b11;
-				font-size: 16px;
-				font-weight: bold;
-				margin:15px 0;
-			}
-			.headingB{
-				color: #999;
-				font-size: 14px;
-			}
-	  	</style>
+	  	</a>
 	</div>
 	<div class="video_desc">
-		<div class="clear"></div>
-		<span class="desc-toggle active">
-			<span class="mobile_sprite"></span>
-		</span>
-		
 		<h1>Miley Cyrus - Wrecking Ball Chatroulette Versiyonu Uzzzzuuuuuuuuuuuuuuuuuuuuunnnn</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate placeat eius nesciunt reprehenderit dolor! Optio sit, sunt, delectus autem assumenda pariatur doloremque ab quam est iusto. Omnis doloribus, eaque architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate placeat eius nesciunt reprehenderit dolor! Optio sitqyy, sunt, delectus autem assumenda pariatur doloremque ab quam est iusto. Omnis doloribus, eaque architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate placeat eius nesciunt reprehenderit dolor! Optio sit, sunt, delectus autem assumenda pariatur doloremque ab quam est iusto. Omnis doloribus, eaque architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate placeat eius nesciunt reprehenderit dolor! Optio sit, sunt, delectus autem assumenda pariatur doloremque ab quam est iusto. Omnis doloribus, eaque architecto.</p>
 		<div class="clear"></div>
 		<div class="share withTictoc onAndroid">
 			<!-- <a href="#" title="Whatsappla"  class="w_share"><span class="mobile_sprite"></span> <span class="w_title">Whatsappla</span></a> -->

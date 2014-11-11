@@ -19,6 +19,10 @@ section.userActions {
 		font-size:14px;
 		line-height: 16px;
 		text-align: center;
+		width: 75%;
+		margin:0 auto 20px;
+		display: block;
+
 	}
 
 /*bigButtons*/
@@ -27,15 +31,18 @@ section.userActions {
 	display: block;
 	width: 100%;
 	height: 40px;
-	font-size:18px;
+	font-size:16px;
 	color: #fff;
 	text-align: center;
 	margin-bottom: 10px;
 }
+textarea.bigButton,
 input.bigButton,
-select.bigButton{
+select.bigButton,
+.special.bigButton{
 	border:none;
 	-webkit-appearance: none;
+	background-color: #fff;
 	color: #aaa;
 	border: 1px solid #eee;
 	text-align: left;
@@ -43,14 +50,19 @@ select.bigButton{
 	padding: 0 5%;
 	width: 90%;
 }
-
+textarea.bigButton{
+	/*height: auto;*/
+	padding: 3% 5%;
+}
 select.bigButton{
 	width: 100%;
+	background-color: #fff!important;
 }
 .selectWrapper{
 	position: relative;
 }
-.selectWrapper:after{
+.selectWrapper:after,
+.special.bigButton:after{
 	content: "";
 	position: absolute;
 	top: 15px;
@@ -61,6 +73,9 @@ select.bigButton{
 	border-right: 10px solid transparent;
 	border-top: 10px solid #eee;
 }
+	.special.bigButton:after{
+		opacity: .75;
+	}
 	input.bigButton:focus,
 	select.bigButton:focus{
 		outline: none;
@@ -174,7 +189,7 @@ section.userActions label{
 		top: 0;
 		left: 0;
 		height: 25px;
-		background-color: #40B12D;
+		background-color: #3F98E9;
 		line-height: 25px;
 		font-size: 14px;
 		text-align: right;
@@ -187,4 +202,31 @@ section.userActions label{
 
 .buttonPassive{
 	opacity: .4;
+}
+
+
+.col-3-4 {
+	width: 65%;
+	margin-right: 5%;
+	float: left;
+}
+
+.col-1-4 {
+	width: 30%;
+	float: left;
+	position: relative;
+}
+option[value="public"]
+{
+background-color:yellow;
+}
+.bigButton.hidden{
+	opacity: 0;
+	z-index: 2!important;
+}
+.col-1-4 .bigButton{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }

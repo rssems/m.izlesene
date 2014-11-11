@@ -2,36 +2,160 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <title>Ýzlesene.com | Türkiye'nin Video Sitesi</title>
 <link href="css/mobile_izlesene.css" rel="stylesheet" type="text/css">
-<link href="css/mobile_izlesene-promote.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<!-- 	<div class="splas_ad">
-		<a href="#" class="splash_close_button">KAPAT &nbsp;X</a>
-		<a href="#">
-			<img src="images/20187.jpg" alt="image">
-		</a>
-	</div> -->
+<div class="googlePlay izlesene-appStore">
+	<a class="googlePlayLink" href="#https://play.google.com/store/apps/details?id=com.nokta.izlesene" title="İzlesene Google Play">
+		<span class="izleseneLogo"></span>
+		<span class="title">Daha iyi bir deneyim icin iPhone uygulamamiz indirebilirsiniz.</span>
+		<span class="icon-googlePlay"><span></span></span>
+	</a>
+	<a href="#2" class="goMobileWeb">MOBIL SITEYE DEVAM ET</a>
+	<div class="googlePlayOverlay"></div>
+</div>
+<style>
+.googlePlay{
+	z-index: 2;
+	background-color: rgba(255,255,255,.95);
+}
+	.googlePlay,
+	.googlePlay a.googlePlayLink,
+	.googlePlayOverlay,
+	.googlePlayOverlay:before{
+		position: fixed; 
+		top: 0; 
+		left: 0; 
+		width: 100%;
+		height: 100%;
+		min-width: 100%;
+		min-height: 100%;
+	}
+	.googlePlay a.googlePlayLink{
+		z-index: 10;
+		display: block;
+		padding-top: 40px;
+	}
+	.googlePlay a.goMobileWeb{
+		font-family: 'Roboto';
+		font-weight: bold;
+		font-size: 12px;
+		color: #4D4D4D;
+		line-height: 14px;
+		text-align: right;
+		padding: 20px;
+		position: absolute;
+		z-index: 20;
+		top: 0;
+		left: 0;
+		width: 100%;
+		display: block;
+		margin-left: -40px;
+		border-bottom:1px solid rgba(255,255,255,0.4);
+	}
+	.googlePlay span.title{
+		font-family: 'Roboto';
+		font-size:18px;
+		color: #222;
+		width: 85%;
+		margin: 30px auto;
+		display: block;
+		text-align: center;
+
+	}
+	.icon-googlePlay{
+		width: 151px;
+		height: 36px;
+		padding: 10px 20px;
+		border-radius: 6px;
+		background-color: #222;
+		display: block;
+		margin: 20px auto;
+	}
+		.icon-googlePlay:active{
+			background-color: #000;
+		}
+		.icon-googlePlay span{
+			webkit-background-size: 151px 36px;
+			-moz-background-size: 151px 36px;
+			background-size: 151px 36px;
+			background-image: url(images/googlePlay.png);
+			display: inline-block;
+			width: 151px;
+			height: 36px;
+		}
+		.izleseneLogo{
+			webkit-background-size: 60px 60px;
+			-moz-background-size: 60px 60px;
+			background-size: 60px 60px;
+			background-image: url(images/izleseneLogo.png);
+			display: block;
+			width: 60px;
+			height: 60px;
+			margin: 50px auto 0;
+		}
+	.googlePlayOverlay{
+		z-index: 1;
+		/*min-height: 100%;*/
+		background: url(images/bg.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+/*		.googlePlayOverlay:before{
+			content: "";
+			z-index: 2;
+			background-image: -o-linear-gradient(-89deg, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.85) 34%, #FFFFFF 100%);
+			background-image: -moz-linear-gradient(-89deg, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.85) 34%, #FFFFFF 100%);
+			background-image: -ms-linear-gradient(-89deg, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.85) 34%, #FFFFFF 100%);
+			background-image: linear-gradient(-179deg, rgba(255,255,255,0.50) 0%, rgba(255,255,255,0.85) 34%, #FFFFFF 100%);
+		}*/
+</style>
+<style>
+	.izlesene-appStore a.goMobileWeb,
+	.izlesene-appStore  span.title{
+		font-family:  "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif!important;
+	}
+	.izlesene-appStore .icon-googlePlay span{
+		webkit-background-size: 159px 36px;
+		-moz-background-size: 159px 36px;
+		background-size: 159px 36px;
+		background-image: url(images/appStore.png);
+		width: 159px;
+	}
+	.izlesene-appStore .googlePlayOverlay{
+		background: url(images/bg-iphone.jpg) no-repeat top center fixed; 
+		width: 320px;
+		max-height: 568px!important;
+	}
+</style>
+
+
+<!-- <div class="fixedAd">
+	<div class="fixedAdElement">
+		REKLAM KODU BURAYA
+	</div>
+</div> -->
 <header>
 	<nav>
-		<ul class="m_top"  id="m_topID" >
-			<li><a href="#">MÜZÝK <span></span></a></li>
-			<li><a href="#">KOMÝK VÝDEOLAR <span></span></a></li>
-			<li><a href="#">AMATÖR <span></span></a></li>
-			<li><a href="#">TV &amp; MAGAZÝN <span></span></a></li>
-			<li><a href="#">SPOR <span></span></a></li>
-			<li><a href="#">ARABALAR <span></span></a></li>
-			<li><a href="#">SÝNEMA <span></span></a></li>
-			<li><a href="#">OYUN <span></span></a></li>	
+		<ul class="m_top" style="display: none; position: absolute; top: 40px; ">
+			<li><a href="#">Müzik</a></li>
+			<li><a href="#">Komik Videolar</a></li>
+			<li><a href="#">Amatör</a></li>
+			<li><a href="#">TV &amp; Magazin</a></li>
+			<li><a href="#">Spor</a></li>
+			<li><a href="#">Arabalar</a></li>
+			<li><a href="#">Sinema</a></li>
+			<li><a href="#">Oyun</a></li>	
 		</ul>
 	</nav>
-	<div class="m_search">
-		<a href="javascript:;" class="mobile_sprite dn" onclick="toggleSearch()">Search</a>		
-	</div>
+<!-- 	<div class="m_search">
+		<a href="javascript:;" class="mobile_sprite" onclick="toggleSearch()">Search</a>		
+	</div> -->
 	<a href="javascript:;" class="m_categories mobile_sprite" id="pull" onclick="togglePull()">Kategoriler</a>
 	
 	<div class="search_bar abs" id="search_barID">
@@ -48,19 +172,48 @@
 		<span class="mobile_sprite"></span>
 	</form>
 </div>
+<section class="main_video_preview">
+	<div class="video_preview">
+	    <a href="#">
+	    <span class="playIcon"></span>
+	    	<img src="images/img1.jpg" alt="img" />
+	  	</a>
+	</div>
+	<div class="video_desc">
+		<h1>Miley Cyrus - Wrecking Ball Chatroulette Versiyonu Uzzzzuuuuuuuuuuuuuuuuuuuuunnnn</h1>
+		<div class="clear"></div>
+		<div class="share withTictoc onAndroid">
+			<!-- <a href="#" title="Whatsappla"  class="w_share"><span class="mobile_sprite"></span> <span class="w_title">Whatsappla</span></a> -->
+			<a href="#" title="Tictocla"  class="tt_share"><span></span></a>
+			<a href="#" title="Tweetle" class="tw_share"><span class="mobile_sprite"></span> Tweetle</a>
+			<a href="#" title="Facebook'ta Paylaş"  class="fb_share"><span class="mobile_sprite"></span> <span class="fb_name">Facebook'ta </span>Paylas</a>
+		</div><!-- share -->
+		<div class="clear"></div>
+	</div>
+	<div class="video_details">
+		<div class="details_more">
+			<div class="detail_left">
+			Yukleyen : <a href="#" title="username">Gagarino</a> (<span class="date">12.06.2012</span>)
+			</div>
+			<div class="detail_right">
+			<span class="view">Izlenme</span>: <span class="view_count">1.605.486</span>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</section>
+<section class="other_videos">
 
-<!-- search_bar -->
-
-<section>
+<div class="similar_videos">
 <ul class="videos">
 	<li>
-		<a href="mobile_video_preview.html" >
+		<a href="#" >
 			<div class="videos_thumb">
 			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
 			<span class="videos_time"></span>
 			</div>
 			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
+				<h2>Shakira  Underneath Me - Canli Performans</h2>
 				<span class="video_view_count">25.503 izlenme</span>
 			</div>
 			<div class="clear"></div>
@@ -73,7 +226,7 @@
 			<span class="videos_time"></span>
 			</div>
 			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performyans Shakira  Underneath Me - Canlý Performans</h2>
+				<h2>Shakira  Underneath Me - Canli Performyans Shakira  Underneath Me - Canli Performans</h2>
 				<span class="video_view_count">25.503 izlenme</span>
 			</div>
 			<div class="clear"></div>
@@ -86,7 +239,20 @@
 			<span class="videos_time"></span>
 			</div>
 			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
+				<h2>Shakira  Underneath Me - Canli Performans</h2>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+		<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h2>Shakira  Underneath Me - Canli Performans</h2>
 				<span class="video_view_count">25.503 izlenme</span>
 			</div>
 			<div class="clear"></div>
@@ -99,7 +265,7 @@
 			<span class="videos_time"></span>
 			</div>
 			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
+				<h2>Shakira  Underneath Me - Canli Performans</h2>
 				<span class="video_view_count">25.503 izlenme</span>
 			</div>
 			<div class="clear"></div>
@@ -112,115 +278,24 @@
 			<span class="videos_time"></span>
 			</div>
 			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
+				<h2>Shakira  Underneath Me - Canli Performans</h2>
 				<span class="video_view_count">25.503 izlenme</span>
 			</div>
 			<div class="clear"></div>
 		</a>
 	</li>
-	<li>
-		<a href="#" >
-			<div class="videos_thumb">
-			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
-			<span class="videos_time"></span>
-			</div>
-			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
-				<span class="video_view_count">25.503 izlenme</span>
-			</div>
-			<div class="clear"></div>
-		</a>
-	</li>
-	<li>
-		<a href="#" >
-			<div class="videos_thumb">
-			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
-			<span class="videos_time"></span>
-			</div>
-			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
-				<span class="video_view_count">25.503 izlenme</span>
-			</div>
-			<div class="clear"></div>
-		</a>
-	</li>
-	<li>
-		<a href="#" >
-			<div class="videos_thumb">
-			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
-			<span class="videos_time"></span>
-			</div>
-			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
-				<span class="video_view_count">25.503 izlenme</span>
-			</div>
-			<div class="clear"></div>
-		</a>
-	</li>
-	<li>
-		<a href="#" >
-			<div class="videos_thumb">
-			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
-			<span class="videos_time"></span>
-			</div>
-			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
-				<span class="video_view_count">25.503 izlenme</span>
-			</div>
-			<div class="clear"></div>
-		</a>
-	</li>
-	<li>
-		<a href="#" >
-			<div class="videos_thumb">
-			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
-			<span class="videos_time"></span>
-			</div>
-			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
-				<span class="video_view_count">25.503 izlenme</span>
-			</div>
-			<div class="clear"></div>
-		</a>
-	</li>
-	<li>
-		<a href="#" >
-			<div class="videos_thumb">
-			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
-			<span class="videos_time"></span>
-			</div>
-			<div class="videos_desc">
-				<h2>Shakira  Underneath Me - Canlý Performans</h2>
-				<span class="video_view_count">25.503 izlenme</span>
-			</div>
-			<div class="clear"></div>
-		</a>
-	</li>
-	
 </ul>
 <div class="clear"></div>
-<a href="#" class="show_more">DAHA FAZLA GÖSTER</a>
+<a href="#" class="show_more">DAHA FAZLA GOSTER</a>
+</div>
+
 </section>
-<!-- <footer>
-	<a href="#" class="footer_bottom">Tam Sürüm &raquo;</a>
-</footer> -->
 <div class="ad_320_50">
 	<img src="images/reklam-im.jpg" alt="ad" width="320" height="50">
 </div>
 
-
-
-<div class="promote">
-	<div class="left">
-		<img src="images/promote/logo.png" alt="">
-	</div><!-- left -->
-	<div class="right">
-		<strong>Kisayoldan erisim icin:</strong>
-		<span class="ios-share"></span>'e bas ve "Ana Ekrana Ekle"
-	</div><!-- right -->
-	<span class="close"><span class="icon-close"></span></span><!-- close -->
-</div><!-- promote -->
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 <script type="text/javascript" src="js/mizleseneOptimized.js"></script>
 
 </body>

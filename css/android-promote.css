@@ -8,12 +8,51 @@
 	display: block;
 	position: relative;
 	border-top:3px solid #B3C833;
-	background-color: red;
+	background-color: #fff;
+	border-bottom:1px solid #efefef;
 }
+	.android-smartbanner img{
+		margin:9px 10px 0 32px;
+		float: left;
+		width: 57px;
+		height: 57px;
+	}
 
-
-
-
+.info-wrap{
+	float: left;
+	margin-top: 15px;
+}
+	.info-wrap .title{
+		font-weight: bold;
+		font-size: 13px;
+		color: #333333;
+	}
+	.info-wrap .info{
+		font-size: 11px;
+		color: #aaa;
+		line-height: 15px;
+	}
+.android-smartbanner a{
+	border-radius: 2px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+	width: auto;
+	padding: 0 20px;
+	background: #B3C833;
+	border-bottom:2px solid #95A62B;
+	float: right;
+	margin-right: 10px;
+	margin-top: 22px;
+}
+	.android-smartbanner a:hover,
+	.android-smartbanner a:active{
+		border-bottom: 0;
+		padding-top: 2px;
+		box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.15);
+	}
 /*CLOSE BUTTON*/
 
 .android-smartbanner .close{
@@ -21,10 +60,10 @@
 	height: 22px;
 	display: block;
 	position: absolute;
-	right: 5px;
-	top: 5px;
+	top: 10px;
+	left: 5px;
 	border-radius: 11px;
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.3);
 	cursor:pointer;
 }
 	.android-smartbanner .close:hover,

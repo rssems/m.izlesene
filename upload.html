@@ -6,12 +6,19 @@
 	<link href="css/mobile_izlesene.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<link href="css/login-upload.css" rel="stylesheet" type="text/css">
+	<link href="css/mobile_manager.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header>
-	<a href="javascript:;" class="m_categories mobile_sprite" id="pull" onclick="togglePull()">Kategoriler</a>
-	<a class="mobile_sprite m_upload" href="" title="">Video Yükle</a>
-	<div class="m_logo mobile_sprite"><a href="#">izlesene</a></div>
+	<a href="#" class="mobile_sprite icon-back">Geri</a>
+	<!-- <span class="noRightIcon"></span> -->
+	<a class="icon-login " href="#" title="#">
+		<img src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/73.jpg" alt="@rssems">
+	</a>
+<!-- 	<a class="mobile_sprite icon-login" href="#" title="#">
+		Giriş Yap
+	</a> -->
+	<h1 class="title">Video Yukle</h1>
 </header>
 <section class="userActions">
 	<h1>Merhaba RSS!</h1>
@@ -36,22 +43,48 @@
 	<form action="">
 	<div>
 		<label for="asdada">BAŞLIK:</label>
-		<input type="text" placeholder="Kullanıcı Adı veya E-Posta" class="bigButton">
+		<input type="text" placeholder="" class="bigButton">
+	</div>
+	<div>
+		<label for="asdada">AÇIKLAMA:</label>
+		<textarea name="" id="" cols="20" rows="10" class="bigButton"></textarea>
+		<!-- <input type="text" placeholder="Kullanıcı Adı veya E-Posta" class="bigButton"> -->
 	</div>
 
 	<div>
-		<label for="asdada">KATEGORİ:</label>
-		<div class="selectWrapper">
-			<select class="bigButton">
-				<option value="amator">Amatör</option>
-				<option value="b">B</option>
-				<option value="c">D</option>
-				<option value="d">E</option>
-				<option value="e">F</option>
-			</select>
-		</div><!-- selectWrapper -->
+		<div class="col-3-4">
+			<label for="asdada">KATEGORİ:</label>
+			<div class="selectWrapper">
+				<select class="bigButton">
+					<option value="amator">Kategori Seçiniz</option>
+					<option value="b">B</option>
+					<option value="c">D</option>
+					<option value="d">E</option>
+					<option value="e">F</option>
+				</select>
+			</div><!-- selectWrapper -->
+		</div>
+		<div class="col-1-4">
+			<label for="asdada">GİZLİLİK:</label>
+			<div class="selectWrapper">
+				<select class="bigButton hidden">
+					<option value="public"><span class="icon-public"></span>Herkese Açık</option>
+					<option value="link">Link ile Erişim</option>
+					<option value="secret">Gizli</option>
+				</select>
+				<div class="special bigButton">
+					<!-- <span class="managerSprite icon-public"></span> -->
+					<span class="managerSprite icon-link"></span>
+					<!-- <span class="managerSprite icon-secret"></span> -->
+				</div>
+			</div><!-- selectWrapper -->
+		</div>
+		<div class="clear"></div>
 	</div>
-
+	<div>
+		<label for="asdada">ETİKETLER:</label>
+		<input type="text" placeholder="" class="bigButton">
+	</div>
 		<a href="#" class="bigButton buttonPositive">Kaydet</a>
 		<a href="#" class="bigButton buttonPositive buttonPassive">Değişiklikleriniz Kaydedildi</a>
 
