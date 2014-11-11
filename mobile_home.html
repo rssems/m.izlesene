@@ -28,20 +28,29 @@
 			<li><a href="#">OYUN <span></span></a></li>	
 		</ul>
 	</nav>
-	<div class="m_search mobile_sprite">
-		<a href="javascript:;" class="m_search_icon" onclick="toggleSearch()">Search</a>		
+	<div class="m_search">
+		<a href="javascript:;" class="mobile_sprite dn" onclick="toggleSearch()">Search</a>		
 	</div>
-	<a href="javascript:;" id="pull" class="mobile_sprite" onclick="togglePull()">Kategoriler</a>
+	<a href="javascript:;" class="m_categories mobile_sprite" id="pull" onclick="togglePull()">Kategoriler</a>
 	
-	<div class="search_bar" id="search_barID" style="display:block;">
+	<div class="search_bar abs" id="search_barID">
 		<form name="searchform" action="#" method="get">
 			<input class="search-mobile" name="kelime" type="text" placeholder="Video, Sarki veya Sanatci Ara" autofocus>
-			<!-- <a href="#">ARA</a> -->
-    	</form>
+			<span class="mobile_sprite"></span>
+    		</form>
 	</div>
 	<div class="m_logo mobile_sprite"><a href="#">Ýzlesene</a></div>
 </header>
-<section style="margin-top:55px;">
+<div class="search_bar">
+	<form name="searchform" action="#" method="get">
+		<input class="search-mobile" name="kelime" type="text" placeholder="Video, Sarki veya Sanatci Ara" autofocus>
+		<span class="mobile_sprite"></span>
+	</form>
+</div>
+
+<!-- search_bar -->
+
+<section>
 <ul class="videos">
 	<li>
 		<a href="mobile_video_preview.html" >
@@ -191,9 +200,9 @@
 <div class="clear"></div>
 <a href="#" class="show_more">DAHA FAZLA GÖSTER <span class="show_more_arrow mobile_sprite"></span></a>
 </section>
-<footer>
+<!-- <footer>
 	<a href="#" class="footer_bottom">Tam Sürüm &raquo;</a>
-</footer>
+</footer> -->
 <div class="ad_320_50">
 	<img src="images/reklam-im.jpg" alt="ad" width="320" height="50">
 </div>

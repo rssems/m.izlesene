@@ -21,16 +21,17 @@
 			<li><a href="#">Sinema</a></li>
 			<li><a href="#">Oyun</a></li>	
 		</ul>
-	</nav><div class="m_search mobile_sprite">
-		<a href="#" class="m_search_icon">Search</a>
-			
-	</div><a href="#" id="pull" class="mobile_sprite">Menu</a>
+	</nav>
+	<div class="m_search">
+		<a href="javascript:;" class="mobile_sprite" onclick="toggleSearch()">Search</a>		
+	</div>
+	<a href="javascript:;" class="m_categories mobile_sprite" id="pull" onclick="togglePull()">Kategoriler</a>
 	
-	
-	<div class="search_bar">
+	<div class="search_bar abs" id="search_barID">
 		<form name="searchform" action="#" method="get">
-			<input class="search-mobile" name="kelime" type="text">
-    	</form>
+			<input class="search-mobile" name="kelime" type="text" placeholder="Video, Sarki veya Sanatci Ara" autofocus>
+			<span class="mobile_sprite"></span>
+    		</form>
 	</div>
 	<div class="m_logo mobile_sprite"><a href="#">Ýzlesene</a></div>
 </header>
@@ -117,6 +118,7 @@
 	</li>
 </ul>
 </section>
+<div class="clear"></div>
 <footer>
 	<a href="#" class="footer_bottom">Tam Sürüm &raquo;</a>
 </footer>
