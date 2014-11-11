@@ -1,0 +1,94 @@
+/*------------------------------------*\
+    $promote
+\*------------------------------------*/
+.promote{
+	border-radius: 4px;
+	background: #FFFFFF;
+	/*border: 1px solid rgba(0,0,0,0.20);*/
+	-moz-box-shadow:    0px 0px 1px 1px rgba(0,0,0,0.20);
+	-webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.20);
+	box-shadow:         0px 0px 1px 1px rgba(0,0,0,0.20);
+	margin: 0 5%;
+	width: 90%;
+	display: block;
+	position: fixed;
+	top: 277px; /*iPhone 4*/
+	left: 0;
+	font-size:14px;
+}
+
+@media screen and (device-aspect-ratio: 40/71) and (max-device-width: 640px) and (orientation:portrait) {
+	.promote{
+		top: 365px; /*iPhone 5*/
+	}
+}
+
+	.promote:after{
+		content: "";
+		background: url('../images/promote/bottom.png');
+		display: inline-block;
+		width: 37px;
+		height: 22px;
+		background-size: 37px 22px;
+		position: absolute;
+		bottom: -19px;
+		left: 50%;
+		margin-left:-17px;
+	}
+	
+	.promote .left{
+		width: 52px;
+		height: 52px;
+		margin:10px;
+		float: left;
+		position: relative;
+		z-index: 4;
+	}
+		.promote .left img{
+			width: 52px;
+			height: 52px;
+			display: block;
+		}
+	.promote .right{
+		margin: 10px 0 0 5px;
+		position: relative;
+		z-index: 4;
+		display: inline-block;
+	}
+		.promote .right strong{
+			display: block;
+			margin: 5px 0;
+		}
+		.ios-share{
+			background: url('../images/promote/share.png');
+			display: inline-block;
+			width: 10px;
+			height: 14px;
+			background-size: 10px 14px;
+			margin-right: 3px;
+		}
+
+	.promote .close{
+		width: 22px;
+		height: 22px;
+		display: block;
+		position: absolute;
+		right: -8px;
+		top: -8px;
+		border-radius: 11px;
+		background: rgba(0,0,0,0.4);
+		cursor:pointer;
+	}
+	.promote .close:hover,
+	.promote .close:active{
+		background: rgba(0,0,0,1);
+	}
+
+	.promote .close span {
+		background: url('../images/promote/close.png');
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		margin:7px;
+		background-size: 8px 8px;
+	}

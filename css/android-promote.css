@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    $promote
+\*------------------------------------*/
+
+.android-smartbanner{
+	width: 100%;
+	height: 77px;
+	display: block;
+	position: relative;
+	border-top:3px solid #B3C833;
+	background-color: red;
+}
+
+
+
+
+/*CLOSE BUTTON*/
+
+.android-smartbanner .close{
+	width: 22px;
+	height: 22px;
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	border-radius: 11px;
+	background: rgba(0,0,0,0.4);
+	cursor:pointer;
+}
+	.android-smartbanner .close:hover,
+	.android-smartbanner .close:active{
+		background: rgba(0,0,0,1);
+	}
+
+	.android-smartbanner .close span {
+		background: url('../images/promote/close.png');
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		margin:7px;
+		background-size: 8px 8px;
+	}

@@ -23,6 +23,7 @@ Description: New optimized light mobile version;
  * CHANNEL................ mobile_izleseneChannel.css
  * userActions................ login-upload.css
  * UPLOAD................... login-upload.css
+ * PROMOTE................... mobile_izlesene-promote.css
  * 
  */
 
@@ -636,3 +637,71 @@ section.other_pages hgroup h2 {
 .adA{
 	margin-left: -2%;
 }
+
+/*Mantik: Ortala, cozunurlugu bozma*/
+.fixedAd{
+	width: 100%;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+}
+.fixedAd .fixedAdElement{
+	display: block;
+	max-width: 350px;
+	max-height:50px;
+	width: 100%;
+	height: auto;
+	margin:0 auto;
+}
+
+
+
+/*------------------------------------*\
+    $WTF
+\*------------------------------------*/
+
+.onAndroid .tw_share,
+.onAndroid .fb_share{
+	width: 49%;
+}
+.withTictoc.onAndroid .tw_share,
+.withTictoc.onAndroid .fb_share{
+	width: 40%;
+}
+	/* tictoc */
+	.share .tt_share{
+		display: none;
+		background-color: #79d9f2;
+		margin-right: 2%;
+		color:#414042;
+		font-weight: bold;
+	}
+	.withTictoc .tt_share{
+		display: block;
+	}
+	.withTictoc .w_title{
+		display: none;
+	}
+	.withTictoc .tt_share,
+	.withTictoc .w_share{
+		width: 15%;
+	}
+		.share .tt_share span{
+			width: 17px;
+			height: 17px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-top: -3px;
+			margin-right: 2px;
+			background: url(../images/tictoc.jpg);
+		}
+		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5) {
+			.share .tt_share span {
+				background: url(../images/tictoc@2x.jpg);
+					-webkit-background-size:   17px 17px;
+					-moz-background-size:   17px 17px;
+					background-size:   17px 17px;
+			}
+		}
