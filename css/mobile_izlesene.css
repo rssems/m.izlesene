@@ -418,54 +418,6 @@ section.main_video_preview {
 				text-overflow: ellipsis;
 			}
 
-/**
- * ^share: before tictoc;
- */
-/*.share{
-	display: block;
-	margin-top: 15px; 
-}
-	.share a {
-		width: 49%;
-		float: left;
-		text-align: center;
-		display: inline-block;
-		height: 32px;
-		font-size: 16px;
-		line-height: 32px;
-		color:#fff;
-		border-radius: 5px;
-		overflow: hidden;
-	}
-		.share a:active{
-			opacity: .8;
-		}
-		.share a span.mobile_sprite{
-			display: inline-block;
-			vertical-align: middle;
-			margin-top: -3px;
-			margin-right: 5px;
-		}
-
-	.share .fb_share  {
-		background-color: #00569a;
-		margin-left: 1%;
-	}
-		.fb_share span{
-			width: 17px;
-			height: 17px;
-			background-position: -51px -31px;
-		}
-	.share .tw_share  {
-		background-color: #057ed0;
-		margin-right: 1%;
-
-	}
-		.tw_share span{
-			background-position: -69px -37px;
-			width: 21px;
-			height: 17px;
-		}*/
 
 /**
  * ^share: after tictoc;
@@ -480,7 +432,7 @@ section.main_video_preview {
 		text-align: center;
 		display: inline-block;
 		height: 32px;
-		font-size: 14px;
+		font-size: 13px;
 		line-height: 32px;
 		color:#fff;
 		border-radius: 5px;
@@ -519,7 +471,27 @@ section.main_video_preview {
 		}
 
 
+	/* tictoc */
+	.share .w_share{
+		background-color: #25D22F;
+		margin-right: 2%;
+	}
+		.share a.w_share span.mobile_sprite{
+			background-position: -44px -51px;
+			width: 18px;
+			height: 18px;
+			margin-right: 0;
+		}
 
+		.fb_name{
+			display: none;
+		}
+
+
+/* Whatsapp yoksa */
+.noiphone.share a{
+	width: 49%!important;
+}
 
 
 /**
@@ -605,38 +577,6 @@ section.other_pages hgroup h2 {
 
 
 
-/*------------------------------------*\
-    $WTF
-\*------------------------------------*/
-
-	/* tictoc */
-	.share .tt_share{
-		background-color: #79d9f2;
-		margin-right: 2%;
-		color:#414042;
-		font-weight: bold;
-	}
-		.share .tt_share span{
-			width: 17px;
-			height: 17px;
-			display: inline-block;
-			vertical-align: middle;
-			margin-top: -3px;
-			margin-right: 2px;
-			background: url(../images/tictoc.jpg);
-		}
-		@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5) {
-			.share .tt_share span {
-				background: url(../images/tictoc@2x.jpg);
-					-webkit-background-size:   17px 17px;
-					-moz-background-size:   17px 17px;
-					background-size:   17px 17px;
-			}
-		}
-
-		.fb_name{
-			display: none;
-		}
 
 /*------------------------------------*\
     $RESPONSIVE
