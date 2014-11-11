@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    $CHANNEL
+\*------------------------------------*/
+section.talentChannel {
+	background-color: #fff;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 40px;
+}
+section.talentChannel a{
+	position: relative;
+	display: block;
+	width: 100%;
+	padding-top: 16.15%;  /* 158px/978px = 0.161554192 */ 
+	background-size: cover;
+	-moz-background-size: cover;
+	background-position: center;
+}
+
+	section.talentChannel a .talentAvatar{
+		position: absolute;
+		bottom: -37.5px;
+		left: 10px;
+		width: 75px;
+		height: 75px;
+		border-radius: 40.5px;
+		border:3px solid #fff;
+	}
+	section.talentChannel a h1{
+		float: left;
+		font-weight: bold;
+		font-size: 14px;
+		color: #222;
+		margin: 10px 0 0 95px;
+
+	}
+	section.talentChannel a span{
+		position: absolute;
+		bottom: -28px;
+		right: 10px;
+		color: #aaa;
+	}

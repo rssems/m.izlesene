@@ -21,9 +21,9 @@
 			<li><a href="#">Oyun</a></li>	
 		</ul>
 	</nav>
-	<div class="m_search">
+<!-- 	<div class="m_search">
 		<a href="javascript:;" class="mobile_sprite" onclick="toggleSearch()">Search</a>		
-	</div>
+	</div> -->
 	<a href="javascript:;" class="m_categories mobile_sprite" id="pull" onclick="togglePull()">Kategoriler</a>
 	
 	<div class="search_bar abs" id="search_barID">
@@ -34,6 +34,12 @@
 	</div>
 	<div class="m_logo mobile_sprite"><a href="#">Ýzlesene</a></div>
 </header>
+<div class="search_bar">
+	<form name="searchform" action="#" method="get">
+		<input class="search-mobile" name="kelime" type="text" placeholder="Video, Sarki veya Sanatci Ara" autofocus>
+		<span class="mobile_sprite"></span>
+	</form>
+</div>
 <section class="main_video_preview">
 	<div class="video_preview">
 	    <a href="#">
@@ -44,7 +50,7 @@
 	<div class="video_desc">
 		<h1>Miley Cyrus - Wrecking Ball Chatroulette Versiyonu Uzzzzuuuuuuuuuuuuuuuuuuuuunnnn</h1>
 		<div class="clear"></div>
-		<div class="share">
+		<div class="share withTictoc">
 			<a href="#" title="Tictocla"  class="tt_share"><span></span> Tictocla</a>
 			<a href="#" title="Tweetle" class="tw_share"><span class="mobile_sprite"></span> Tweetle</a>
 			<a href="#" title="Facebook'ta Paylaş"  class="fb_share"><span class="mobile_sprite"></span> <span class="fb_name">Facebook'ta </span>Paylas</a>
@@ -147,13 +153,10 @@
 	</li>
 </ul>
 <div class="clear"></div>
-<a href="#" class="show_more">DAHA FAZLA GOSTER <span class="show_more_arrow mobile_sprite"></span></a>
+<a href="#" class="show_more">DAHA FAZLA GOSTER</a>
 </div>
 
 </section>
-<footer>
-	<a href="#" class="footer_bottom">Tam Surum &raquo;</a>
-</footer>
 <div class="ad_320_50">
 	<img src="images/reklam-im.jpg" alt="ad" width="320" height="50">
 </div>
