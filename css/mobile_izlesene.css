@@ -88,6 +88,9 @@ a,a:hover {
 .dn{
 	display: none!important;
 }
+.hide{
+	opacity: 0;
+}
 /**
  * ^sprite
  */
