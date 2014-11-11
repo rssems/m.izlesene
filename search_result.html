@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>İzlesene.com | Türkiye'nin Video Sitesi</title>
+<link href="css/mobile_izlesene.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+	<nav>
+		<ul class="m_top" style="display: none; position: absolute; top: 40px; ">
+			<li><a href="#">Müzik</a></li>
+			<li><a href="#">Komik Videolar</a></li>
+			<li><a href="#">Amatör</a></li>
+			<li><a href="#">TV &amp; Magazin</a></li>
+			<li><a href="#">Spor</a></li>
+			<li><a href="#">Arabalar</a></li>
+			<li><a href="#">Sinema</a></li>
+			<li><a href="#">Oyun</a></li>	
+		</ul>
+	</nav><div class="m_search mobile_sprite">
+		<a href="#" class="m_search_icon">Search</a>
+			
+	</div><a href="#" id="pull" class="mobile_sprite">Menu</a>
+	
+	
+	<div class="search_bar">
+		<form name="searchform" action="#" method="get">
+			<input class="search-mobile" name="kelime" type="text">
+    	</form>
+	</div>
+	<div class="m_logo mobile_sprite"><a href="#">İzlesene</a></div>
+</header>
+<section class="other_pages">
+	<h1>Tarkan arama sonuçları</h1>
+<ul class="videos">
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlı Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlı Performyans Shakira  Underneath Me - Canlı Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlı Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlı Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlı Performyans Shakira  Underneath Me - Canlı Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlı Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+</ul>
+</section>
+<footer>
+	<div class="footer_top">
+		<div class="footer_left"><a href="#" class="m_footer_nokta mobile_sprite">Nokta</a></div>
+		<div class="footer_right">Noktacom Medya<br />
+		<span class="light_color">İnternet Hizmetleri San. ve Tic. A.Ş.</span>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="footer_bottom"><a href="#">Tam Sürüm &raquo;</a></div>
+</footer>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" >
+jQuery(document).ready(function($) {		
+	$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				ul_menu		= $('ul.m_top');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();						
+				menu.slideToggle("fast");
+				ul_menu.css("position", "absolute");
+				ul_menu.css('top',40);	
+				$('.search_bar').css("display", "none")	
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+	});
+
+	$('.m_search_icon').click(function() {
+  		$('.search_bar').slideToggle('fast');
+  		$('nav ul').css("display", "none")	
+	});		
+
+});
+</script>
+</body>
+</html>
