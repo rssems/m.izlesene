@@ -9,15 +9,15 @@
 </head>
 
 <body>
-	<div class="splas_ad">
+<!-- 	<div class="splas_ad">
 		<a href="#" class="splash_close_button">KAPAT &nbsp;X</a>
 		<a href="#">
 			<img src="images/20187.jpg" alt="image">
 		</a>
-	</div>
+	</div> -->
 <header>
 	<nav>
-		<ul class="m_top" style="display: none; position: absolute; top: 40px; ">
+		<ul class="m_top"  id="m_topID" >
 			<li><a href="#">MÜZÝK <span></span></a></li>
 			<li><a href="#">KOMÝK VÝDEOLAR <span></span></a></li>
 			<li><a href="#">AMATÖR <span></span></a></li>
@@ -29,44 +29,17 @@
 		</ul>
 	</nav>
 	<div class="m_search mobile_sprite">
-		<a href="#" class="m_search_icon">Search</a>		
+		<a href="javascript:;" class="m_search_icon" onclick="toggleSearch()">Search</a>		
 	</div>
-	<a href="#" id="pull" class="mobile_sprite">Menu</a>
+	<a href="javascript:;" id="pull" class="mobile_sprite" onclick="togglePull()">Kategoriler</a>
 	
-	<div class="search_bar">
+	<div class="search_bar" id="search_barID">
 		<form name="searchform" action="#" method="get">
-			<input class="search-mobile" name="kelime" type="text">
+			<input class="search-mobile" name="kelime" type="text" autofocus>
     	</form>
 	</div>
 	<div class="m_logo mobile_sprite"><a href="#">Ýzlesene</a></div>
 </header>
-<aside>
-	<div class="flexslider">
-	  <ul class="slides">
-	    <li>
-	    <a href="#">
-	    	<div class="play_icon mobile_sprite">Play</div>
-	    	<div class="desc">Brezilya Ligi’nde Kaleciden Muhteþem Frik...</div>
-	    	<img src="images/img1.jpg" alt="img" />
-	  	</a>
-	    </li>
-	    <li>
-		<a href="#">
-			<div class="play_icon mobile_sprite">Play</div>
-			<div class="desc">Brezilya Ligi’nde Kaleciden</div>
-	    	<img src="images/img2.jpg" alt="img" />
-	    </a>
-	    </li>
-	    <li>
-		<a href="#">
-			<div class="play_icon mobile_sprite">Play</div>
-			<div class="desc">Brezilya Ligi’nde Kaleciden Muhteþem Frik...</div>
-	    	<img src="images/img3.jpg" alt="img" />
-	    </a>
-	    </li>
-	  </ul>
-	</div>
-</aside>
 <section>
 <ul class="videos">
 	<li>
@@ -108,62 +81,122 @@
 			<div class="clear"></div>
 		</a>
 	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlý Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlý Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlý Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlý Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlý Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlý Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlý Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	<li>
+		<a href="#" >
+			<div class="videos_thumb">
+			<img src="images/video_img.jpg" width="125" height="75" alt="img" class="videos_thumb" />
+			<span class="videos_time"></span>
+			</div>
+			<div class="videos_desc">
+				<h4>Shakira  Underneath Me - Canlý Performans</h4>
+				<span class="video_view_count">25.503 izlenme</span>
+			</div>
+			<div class="clear"></div>
+		</a>
+	</li>
+	
 </ul>
+<div class="clear"></div>
 <a href="#" class="show_more">DAHA FAZLA GÖSTER <span class="show_more_arrow mobile_sprite"></span></a>
 </section>
 <footer>
-	<div class="footer_top">
-		<div class="footer_left"><a href="#" class="m_footer_nokta mobile_sprite">Nokta</a></div>
-		<div class="footer_right">Noktacom Medya<br />
-		<span class="light_color">Ýnternet Hizmetleri San. ve Tic. A.Þ.</span>
-		</div>
-		<div class="clear"></div>
-	</div>
-	<div class="footer_bottom"><a href="#">Tam Sürüm &raquo;</a></div>
+	<a href="#" class="footer_bottom">Tam Sürüm &raquo;</a>
 </footer>
 <div class="ad_320_50">
 	<img src="images/reklam-im.jpg" alt="ad" width="320" height="50">
 </div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-<script type="text/javascript" >
-jQuery(document).ready(function($) {		
-	$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				ul_menu		= $('ul.m_top');
-				menuHeight	= menu.height();
+<script type="text/javascript" src="js/mizleseneOptimized.js"></script>
 
-			$(pull).on('click', function(e) {
-				e.preventDefault();						
-				menu.slideToggle("fast");
-				ul_menu.css("position", "absolute");
-				ul_menu.css('top',40);	
-				$('.search_bar').css("display", "none")	
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-	});
-
-	$('.m_search_icon').click(function() {
-  		$('.search_bar').toggle();
-  		$('nav ul').css("display", "none")	
-	});	
-
-});
-
-$(window).load(function() {
-    $('.flexslider').flexslider({
-    	directionNav: false,
-    	slideshowSpeed: 4000,
-    	animation: "fade"
-    });
-});
-</script>
 </body>
 </html>
