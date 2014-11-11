@@ -1,0 +1,190 @@
+/*------------------------------------*\
+    $userLogin
+\*------------------------------------*/
+section.userActions {
+	margin: 2%;
+	width: 96%;
+}
+	section.userActions h1{
+		font-size: 20px;
+		font-weight:300;
+		color: #222;
+		line-height: 24px;
+		display: block;
+		text-align: center;
+		margin:20px 0;
+	}
+	section.userActions p{
+		color: #222;
+		font-size:14px;
+		line-height: 16px;
+		text-align: center;
+	}
+
+/*bigButtons*/
+.bigButton{
+	border-radius: 5px;
+	display: block;
+	width: 100%;
+	height: 40px;
+	font-size:18px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 10px;
+}
+input.bigButton,
+select.bigButton{
+	border:none;
+	-webkit-appearance: none;
+	color: #aaa;
+	border: 1px solid #eee;
+	text-align: left;
+	font-weight:300;
+	padding: 0 5%;
+	width: 90%;
+}
+
+select.bigButton{
+	width: 100%;
+}
+.selectWrapper{
+	position: relative;
+}
+.selectWrapper:after{
+	content: "";
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #eee;
+}
+	input.bigButton:focus,
+	select.bigButton:focus{
+		outline: none;
+		border-color:#F85D12;
+	}
+	.facebookBrand{
+		background-color: #00569A;
+	}
+	.buttonPositive{
+		background: #4AA71F;
+	}
+	.buttonAction{
+		background: #F76E1E;
+	}
+	.buttonInfo{
+		background: #FBEEC0;
+		color: #7B746D;
+	}
+	.error{
+		background-color:#d32929;
+	}
+	.buttonPositive, .buttonAction, .buttonInfo, .facebookBrand{
+		font-weight: bold;
+		line-height: 40px;
+		-moz-box-shadow:    inset 0px 0px 0px 1px rgba(0,0,0,0.10);
+		-webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.10);
+		box-shadow:         inset 0px 0px 0px 1px rgba(0,0,0,0.10);
+	}
+		.buttonPositive:active, .buttonAction:active, .buttonInfo:active{
+			opacity: .8;
+		}
+
+	/*YA DA*/
+	.hr{
+		position: relative;
+		width: 100%;
+		margin: 20px 0;
+		border-bottom:1px solid #eee;
+	}
+		.hr span{
+			padding: 10px;
+			position: absolute;
+			left: 50%;
+			top: -17px;
+			position: absolute;
+			margin-left: -35px;
+			background-color: #F5F5F5;
+			color: #aaa;
+			min-width: 70px;
+			text-align: center;
+		}
+
+	.otherLinks{
+		font-size: 14px;
+		color: #aaa;
+		text-decoration: underline;
+	}
+		.otherLinks.left{
+			float: left;
+		}
+		.otherLinks.right{
+			float: right;
+		}
+
+/*hiddenFileInput*/
+.hiddenFileInput{
+	position: relative;
+	margin-bottom: 10px;
+}
+	.hiddenFileInput input{
+		width: 100%;
+		height: 40px;
+		opacity: 0;
+		z-index: 2;
+		position: relative;
+	}
+		.hiddenFileInput input:focus{
+			outline: none;
+		}
+	.hiddenFileInput a{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.hiddenFileInput:hover a{
+		opacity: .9;
+	}
+
+section.userActions label{
+	font-size: 14px;
+	color: #aaa;
+	line-height: 16px;
+	margin-left: 5%;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.progressBar{
+	border-radius: 5px;
+	background: #fff;
+	border:1px solid #eee;
+	width: 100%;
+	height: 25px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+	.progressBar span{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 25px;
+		background-color: #40B12D;
+		line-height: 25px;
+		font-size: 14px;
+		text-align: right;
+		display: block;
+		color: #fff;
+		padding-right: 2%;
+		margin-left: -2%;
+		min-width: 13%;
+	}
+
+.buttonPassive{
+	opacity: .4;
+}

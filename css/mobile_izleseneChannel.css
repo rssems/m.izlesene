@@ -31,6 +31,8 @@ section.talentChannel a{
 		font-size: 14px;
 		color: #222;
 		margin: 10px 0 0 95px;
+		width: 50%;
+		text-align: left;
 
 	}
 	section.talentChannel a span{
@@ -38,4 +40,6 @@ section.talentChannel a{
 		bottom: -28px;
 		right: 10px;
 		color: #aaa;
+		width: 50%;
+		text-align: right;
 	}

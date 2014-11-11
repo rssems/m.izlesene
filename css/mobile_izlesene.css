@@ -20,8 +20,9 @@ Description: New optimized light mobile version;
  * WTF.........................
  * RESPONSIVE...........
  * ADS.........................
- * CHANNEL......................... mobile_izleseneChannel.css
-
+ * CHANNEL................ mobile_izleseneChannel.css
+ * userActions................ login-upload.css
+ * UPLOAD................... login-upload.css
  * 
  */
 
@@ -30,11 +31,9 @@ Description: New optimized light mobile version;
     $TODO
 \*------------------------------------*/
 /**
- * compress ve imaj yollari
+ * compress + img compress
+ * img yollari
  * logo ortalama bug fix
- * iphone inbot inset shadow bug fix
- * font bug-fix
- * reklam z-indexi
  * 
  */
 
@@ -93,13 +92,14 @@ a,a:hover {
  */
 .mobile_sprite {
 	background-image: url(../images/mspriteOptimized.png);
+	background-repeat: no-repeat;
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5) {
 	.mobile_sprite {
 		background: url(../images/mspriteOptimized@2x.png);
-		-webkit-background-size:90px 50px;
-		-moz-background-size:90px 50px;
-		background-size:90px 50px;
+		-webkit-background-size:90px 70px;
+		-moz-background-size:90px 70px;
+		background-size:90px 70px;
 	}
 }
 
@@ -115,12 +115,30 @@ header {
 	border-bottom:1px solid #eee;
 	z-index: 10;
 }
+/**
+ * ^logo
+ */
+.m_logo {
+	background-position: -2px -2px;
+	display: inline-block;
+	text-align: center;
+	width: 87px;
+	height: 26px;
+	text-indent: -9999px;
+	margin:6.5px auto 0;
+}
+	.m_logo a {
+		display: block;
+		width: 87px;
+		height: 26px;
+	}
+
+
 
 /**
  * ^categories toggle
  */
 .m_categories {
-	background-repeat: no-repeat;
 	background-position: -2px -30px;
 	display: block;
 	text-indent: -9999px;
@@ -130,6 +148,7 @@ header {
 	margin: 10px 0 0 10px;
 	float: left;
 }
+
 
 /**
  * ^navigation
@@ -188,6 +207,19 @@ nav, ul.m_top {
 					top: 50%;
 					margin: -5px 0 0 0;
 				}
+
+/**
+ * ^m_upload
+ */
+.m_upload{
+	background-position: -46px -30px;
+	width: 31px;
+	height: 18px;
+	display: block;
+	text-indent: -9999px;
+	margin: 11px 10px 0 0;
+	float: right;
+}
 
 
 /**
@@ -256,25 +288,6 @@ nav, ul.m_top {
 			margin-top: -8px;
 			left: 2%;
 		}
-/**
- * ^logo
- */
-.m_logo {
-	background-repeat: no-repeat;
-	background-position: -2px -2px;
-	display: inline-block;
-	text-align: center;
-	width: 87px;
-	height: 26px;
-	text-indent: -9999px;
-	margin: 6.5px 0 0 -34px;
-}
-	.m_logo a {
-		display: block;
-		width: 87px;
-		height: 26px;
-	}
-
 
 /*------------------------------------*\
     $SECTION_VIDEOS
@@ -476,7 +489,8 @@ section.main_video_preview {
 		.share a:active{
 			opacity: .8;
 		}
-		.share a span.mobile_sprite{
+		.share a span.mobile_sprite, 
+		.facebookBrand span.mobile_sprite{
 			display: inline-block;
 			vertical-align: middle;
 			margin-top: -3px;
@@ -487,10 +501,11 @@ section.main_video_preview {
 		background-color: #00569a;
 		margin-left: 1%;
 	}
-		.fb_share span{
+		.fb_share span, 
+		.facebookBrand span{
 			width: 17px;
 			height: 17px;
-			background-position: -69px -30px;
+			background-position: -25px -51px;
 		}
 	.share .tw_share  {
 		background-color: #057ed0;
@@ -498,7 +513,7 @@ section.main_video_preview {
 
 	}
 		.tw_share span{
-			background-position: -46px -30px;
+			background-position: -2px -51px;
 			width: 21px;
 			height: 18px;
 		}
