@@ -776,3 +776,29 @@ section.other_pages hgroup h2 {
 					background-size:   17px 17px;
 			}
 		}
+
+/**
+ * ^tv_yansit
+ */
+.tv_share{
+	position: relative;
+}
+	.tv_share a.tv_share_button{
+		width: 100%;
+		float: left;
+		text-align: center;
+		display: inline-block;
+		height: 32px;
+		font-size: 13px;
+		line-height: 32px;
+		border-radius: 5px;
+		background: #fff;
+		border: 1px solid #eee;
+	}
+
+
+
+
+
+
+
