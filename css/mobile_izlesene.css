@@ -100,7 +100,7 @@ a,a:hover {
 }
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5) {
 	.mobile_sprite {
-		background: url(../images/mSprite@2x.png);
+		background-image: url(../images/mSprite@2x.png);
 		-webkit-background-size:90px 70px;
 		-moz-background-size:90px 70px;
 		background-size:90px 70px;
@@ -480,7 +480,7 @@ section.main_video_preview {
 		font-size: 13px;
 		line-height: 32px;
 		color:#fff;
-		border-radius: 5px;
+		border-radius: 3px;
 		overflow: hidden;
 	}
 		.share a:active{
@@ -745,7 +745,7 @@ section.other_pages hgroup h2 {
 	.share .tt_share{
 		display: none;
 		background-color: #79d9f2;
-		margin-right: 2%;
+		margin-right: 3%;
 		color:#414042;
 		font-weight: bold;
 	}
@@ -782,22 +782,49 @@ section.other_pages hgroup h2 {
  */
 .tv_share{
 	position: relative;
+	margin-top: 10px;
+	display: block;
 }
 	.tv_share a.tv_share_button{
 		width: 100%;
 		float: left;
 		text-align: center;
 		display: inline-block;
-		height: 32px;
+		height: 30px;
 		font-size: 13px;
-		line-height: 32px;
-		border-radius: 5px;
-		background: #fff;
-		border: 1px solid #eee;
+		line-height: 30px;
+		border: 1px solid #DDD;
+		background: #F9F9F9;
+		font-weight: bold;
+		color: #333;
+		border-radius: 3px;
 	}
 
+	.tvreflect_icon{
+		background-image: url('../images/tv/tv_sprite_mini.min.png');
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 15px;
+		height: 12px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: -4px;
+	}
 
-
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5) {
+	.tvreflect_icon {
+		background-image: url('../images/tv/tv_sprite_mini@2x.min.png');
+		-webkit-background-size:15px 25px;
+		-moz-background-size:15px 25px;
+		background-size:15px 25px;
+	}
+}
+		.tvreflect_icon.active{
+			background-position: 0 -13px;
+		}
+		.tvreflect_text{
+			margin-left: 8px;
+		}
 
 
 

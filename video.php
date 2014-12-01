@@ -26,24 +26,6 @@
 			<a href="#" title="Facebook'ta Paylaş"  class="fb_share"><span class="mobile_sprite"></span> <span class="fb_name">Facebook'ta </span>Paylas</a>
 		</div><!-- share -->
 		<div class="clear"></div>
-		<div class="tv_share">
-			<a href="" class="tv_share_button"><span></span> TV'YE YANSIT</a>
-
-			<link rel="stylesheet" href="css/mobile_tooltip.css">
-			<div class="tooltip">
-				<div class="tooltip_wrapper">
-					<div class="tooltip_up"></div>
-					<div class="clear"></div>
-					<div class="tooltip_title">VİDEOYU TV'YE YANSIT</div>
-					<div class="clear"></div>
-					<div class="tooltip_content">
-						asd
-					</div><!-- tooltip_content -->
-				</div><!-- /tooltip_wrapper -->
-				<div class="clear"></div>
-			</div><!-- tooltip -->
-
-		</div><!-- tv_share -->
 	</div><!-- video_desc -->
 	<div class="video_details">
 		<div class="details_more">
@@ -60,4 +42,7 @@
 
 <?php include "common/videos.php"; ?>
 <?php include "common/ad_320_50.php"; ?>
+
+
+
 <?php include "common/footer.php"; ?>
