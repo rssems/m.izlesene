@@ -1,25 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Login</title>
-	<link href="css/mobile_izlesene.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<link href="css/login-upload.css" rel="stylesheet" type="text/css">
-	<link href="css/mobile_manager.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<header>
-	<a href="#" class="mobile_sprite icon-back">Geri</a>
-	<!-- <span class="noRightIcon"></span> -->
-	<a class="icon-login " href="#" title="#">
-		<img src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/73.jpg" alt="@rssems">
-	</a>
-<!-- 	<a class="mobile_sprite icon-login" href="#" title="#">
-		Giriş Yap
-	</a> -->
-	<h1 class="title">Video Yukle</h1>
-</header>
+<?php include "common/meta.php"; ?>
+
+<link href="css/login-upload.css" rel="stylesheet" type="text/css">
+<link href="css/mobile_manager.css" rel="stylesheet" type="text/css">
+
+<?php include "common/header_title.php"; ?>
+
 <section class="userActions">
 	<h1>Merhaba RSS!</h1>
 	<div class="hiddenFileInput">
@@ -90,5 +75,4 @@
 
 	</form>
 </section>
-</body>
-</html>
+<?php include "common/footer.php"; ?>
