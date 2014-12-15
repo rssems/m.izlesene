@@ -428,7 +428,7 @@ section.main_video_preview {
 		section.main_video_preview .video_preview img {
 			width: 100%;
 			display: block;
-			margin: 0 0 10px 0;
+			margin: 0;
 		}
 		section.main_video_preview .video_preview .playIcon{
 			width: 75px;

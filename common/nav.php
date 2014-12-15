@@ -25,7 +25,7 @@
 <!-- /nav -->
 
 
-<!-- nav2 -->
+<!-- nav2 
 <div class="clear"></div>
 <div class="nav-muzik">
 	<a href="#" class="half active">MÜZİK</a>
@@ -44,6 +44,6 @@
 	</div>
 </div>
 <div class="clear"></div>
-<!-- /nav2 -->
+ /nav2 -->
 
 
