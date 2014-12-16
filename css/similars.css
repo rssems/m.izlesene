@@ -1,0 +1,71 @@
+.video_similars li .similarItem {
+	display: block;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	float: left;
+	cursor: pointer;
+}
+	.video_similars li .similarItem:before{
+		content: "";
+		display: block;
+		padding-top: 56.25%; /*9 / 16*/
+	}
+	.video_similars .similarItem .content{
+		position:  absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+/*  grids */
+.grid2_1 li .similarItem{
+	width: 50%;
+}
+	.grid2_1 li .similarItem:before{
+		padding-top: 112.5%; /*(9/16) * (2/1)*/
+	}
+.grid2_2 li .similarItem{
+	width: 50%;
+}
+.grid3_2 li .similarItem{
+	width: 33.3%;
+}
+	.grid3_2 li .similarItem:before{
+		padding-top: 84.375%; /*(9/16) * (3/2)*/
+	}
+.grid3_3 li .similarItem{
+	width: 33.3%;
+}
+
+/*ui*/
+.video_similars .similarItem .content{
+	background: rgba(0,0,0,0.75);
+	opacity: 0;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+	-ms-transition: All 0.3s ease;
+	transition: All 0.3s ease;
+}
+	.video_similars .similarItem.active .content{
+		opacity: 1;
+	}
+	.video_similars .similarItem .content{
+		padding: 5px;
+		color: #fff;
+		font-size: 13px;
+		line-height: 16px;
+		font-weight: 500;
+	}
+		.video_similars .similarItem .content span{
+			position: absolute;
+			bottom: 5px;
+			left: 5px;
+			font-size: 10px;
+			opacity: 0.6;
+		}

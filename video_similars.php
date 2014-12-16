@@ -5,10 +5,7 @@
 
 <section class="main_video_preview">
 	<div class="video_preview">
-	    <a href="#">
-	    <span class="playIcon"></span>
-	    	<img src="images/img1.jpg" alt="img" />
-	  	</a>
+	    <?php include "similars.php"; ?>
 	</div><!-- video_preview -->
 
 	<div class="video_desc">
@@ -17,8 +14,8 @@
 			<span class="mobile_sprite"></span>
 		</span>
 		
-		<h1>Emma Watson Heforshe Speech At The United Nations | Un Women 2014</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate placeat eius nesciunt reprehenderit dolor! Optio sit, sunt, delectus autem assumenda pariatur doloremque ab quam est iusto. Omnis doloribus, eaque architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate placeat eius nesciunt reprehenderit dolor! Optio sitqyy, sunt, delectus autem assumenda pariatur doloremque ab quam est iusto. Omnis doloribus, eaque architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate placeat eius nesciunt reprehenderit dolor! Optio sit, sunt, delectus autem assumenda pariatur doloremque ab quam est iusto. Omnis doloribus, eaque architecto.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate placeat eius nesciunt reprehenderit dolor! Optio sit, sunt, delectus autem assumenda pariatur doloremque ab quam est iusto. Omnis doloribus, eaque architecto.</p>
+		<h1>Un Women 2014 | Emma Watson Heforshe Speech At The United Nations</h1>
+		<p>UN Women Global Goodwill Ambassador, Emma Watson, delivers her moving remarks during the HeForShe Special Event at United Nations Headquarters in New York on... </p>
 		<div class="clear"></div>
 		<div class="share withTictoc onAndroid">
 			<!-- <a href="#" title="Whatsappla"  class="w_share"><span class="mobile_sprite"></span> <span class="w_title">Whatsappla</span></a> -->
