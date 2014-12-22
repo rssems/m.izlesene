@@ -45,6 +45,7 @@
 	height: 135px;
 	width: 100%;
 	overflow: scroll;
+	overflow-y: hidden;
 	/*scroll bar yerlesimi icin:*/
 	padding-bottom: 10px;
 	margin-bottom: -10px;
@@ -69,5 +70,5 @@
 			font-weight: 500;
 		}
 		.videos_group_horizontal  ul.videos .videos_desc{
-			max-height: 50px;
+			height: 50px;
 		}
