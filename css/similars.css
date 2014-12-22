@@ -1,4 +1,6 @@
+
 .video_similars li .similarItem {
+	/*display: none;*/
 	display: block;
 	position: relative;
 	-webkit-background-size: cover;
@@ -29,6 +31,11 @@
 	.grid2_1 li .similarItem:before{
 		padding-top: 112.5%; /*(9/16) * (2/1)*/
 	}
+
+/*	.video_similars.grid2_1 li:nth-child(1) .similarItem,
+	.video_similars.grid2_1 li:nth-child(2) .similarItem{
+		display: block;
+	}*/
 .grid2_2 li .similarItem{
 	width: 50%;
 }

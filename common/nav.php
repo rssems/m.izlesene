@@ -10,15 +10,9 @@
 		<li><a href="">OYUN</a></li>
 		<li><a href="">SAĞLIK & GÜZELLİK</a></li>
 		<li><a href="">ARABALAR</a></li>
-		<li><a href="">test</a></li>
-		<li><a href="">test</a></li>
-		<li><a href="">test</a></li>
-		<li><a href="">test</a></li>
-		<li><a href="">test</a></li>
-		<li><a href="">test</a></li>
-		<li><a href="">test</a></li>
-		<li><a href="">test</a></li>
-		<li><a href="">test</a></li>
+		<li><a href="">KOMİK</a></li>
+		<li><a href="">SİNEMA</a></li>
+		<li><a href="">SPOR</a></li>
 	</ul>
 </div>
 <div class="clear"></div>

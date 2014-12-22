@@ -42,5 +42,4 @@
 <?php include "common/ad_320_50.php"; ?>
 
 
-
 <?php include "common/footer.php"; ?>

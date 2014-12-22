@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/similars.css">
 
-<div class="video_similars grid3_3">
+<div class="video_similars grid2_1">
 	<ul>
 		<li>
 			<a class="similarItem active" href="http://www.google.com" style="background-image:url('http://i5.imgiz.com/rshots/7928/yellow-claw-till-it-hurts-ft-ayden_7928356-9997_1280x720.jpg');">
@@ -74,9 +74,7 @@
 					<span>126 izlenme</span>			
 				</span>
 			</a>
-		</li> <!---->
+		</li> <!--   -->
 	</ul>
 	<div class="clear"></div>
 </div>
-
-<!-- <script src="js/punch.js"></script> -->

@@ -349,7 +349,22 @@ section ul.videos {
 
 		ul.videos .videos_thumb {
 			float: left;
+			position: relative;
 		}
+			ul.videos .videos_thumb img{
+				float: left;
+			}
+			ul.videos .videos_thumb .videos_time{
+				padding: 1px 3px;
+				background-color: rgba(0,0,0,0.7);
+				font-size: 11px;
+				color: #fff;
+				border-radius: 2px;
+				position: absolute;
+				bottom: 5px;
+				right: 5px;
+				z-index: 2;
+			}
 
 		ul.videos .videos_desc {
 			border: 1px solid #eee;
@@ -367,16 +382,17 @@ section ul.videos {
 				line-height: 16px;
 				padding-left: 10px;
 				height: 32px;
+				font-weight: 500;
 				overflow: hidden;
 			}
 
 				ul.videos .videos_desc .video_view_count {
 					color: #aaa;
-					padding: 6px 4% 6px 3%;
+					padding: 5px 10px;
 					position: absolute;
+					left: 0;
 					bottom: 0;
 					display: block;
-					width: 95%;
 				}
 
 
@@ -394,8 +410,11 @@ section a.show_more {
 	font-size: 12px;
 	font-weight: bold;
 	color: #aaa;
-	margin: 0 2% 12px;
+	margin: 0 2%;
 }
+	section a.show_more:active{
+		background: #eee;
+	}
 section a.show_more:after{
 	content: "";
 	width: 0px;
@@ -640,16 +659,15 @@ section.other_pages hgroup h2 {
 		width: 100%;
 	}
 
-	section ul.videos li a .videos_desc .video_view_count {
-		padding: 2% 4% 2% 5%;
-		width: 93%;
-	}
+	/*section ul.videos li a .videos_desc .video_view_count {
+		padding: 5px 10px;
+	}*/
 }
 
 @media only screen and (min-width: 767px) {
-	section ul.videos {
-		margin-left: 3%;
-	}
+	/*section ul.videos {
+		margin-left: 2%;
+	}*/
 	section ul.videos li{
 		width: 48%;
 		float: left;
