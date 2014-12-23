@@ -9,6 +9,7 @@
 	    <span class="playIcon"></span>
 	    	<img src="images/img1.jpg" alt="img" />
 	  	</a>
+
 	</div><!-- video_preview -->
 
 	<div class="video_desc">

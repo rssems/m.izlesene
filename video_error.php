@@ -1,7 +1,7 @@
 <div class="video_error">
 	<span class="icon-errorIz"></span>
-	<div class="headingA">"Sigara Icen Hamile Kadina Sizin Tepkiniz Nasil Olurdu?"</div>
-	<div class="headingB">baslikli video, telif hakki yuzunden artik kullanilmiyor.</div>
+	<div class="headingA">Heading - Title</div>
+	<div class="headingB">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat necessitatibus rerum.</div>
 </div>
 <style>
 .video_error{
