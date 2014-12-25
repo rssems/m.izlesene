@@ -33,12 +33,12 @@
 	
 	<a href="javascript:;" class="m_categories mobile_sprite hide" id="pull" onclick="togglePull()">Kategoriler</a>
 
-	<div class="search_bar abs" id="search_barID">
+<!-- 	<div class="search_bar abs" id="search_barID">
 		<form name="searchform" action="#" method="get">
 			<input class="search-mobile" name="kelime" type="text" placeholder="Video, Şarkı veya Sanatçı Ara" autofocus>
 			<span class="mobile_sprite"></span>
-    		</form>
-	</div>
+		</form>
+	</div> -->
 	<div class="m_logo mobile_sprite"><a href="#">İzlesne</a></div>
 </header>
 <div class="clear"></div>

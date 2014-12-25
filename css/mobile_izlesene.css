@@ -101,9 +101,9 @@ a,a:hover {
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),only screen and (-moz-min-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 3/2),only screen and (min-device-pixel-ratio: 1.5) {
 	.mobile_sprite {
 		background-image: url(../images/mSprite@2x.png);
-		-webkit-background-size:90px 70px;
-		-moz-background-size:90px 70px;
-		background-size:90px 70px;
+		-webkit-background-size:90px 81px;
+		-moz-background-size:90px 81px;
+		background-size:90px 81px;
 	}
 }
 
@@ -294,12 +294,13 @@ nav, ul.m_top {
 	border-bottom: 1px solid #eee;
 	background-color: #F5F5F5;
 	text-align: center;
+	position: relative;
 }
-	.search_bar.abs{
+	/*.search_bar.abs{
 		display: none;
 		position: absolute;
 		top: 40px;
-	}
+	}*/
 	.search_bar form{
 		position: relative;
 		width: 96%;
@@ -320,10 +321,13 @@ nav, ul.m_top {
 	}
 		.search_bar input:focus{
 			outline: none;
-			border-color: #f85d12;
+			border-radius: 4px 4px 0 0;
+			text-align: left;
+			color: #222;
+			/*border-color: #f85d12;*/
 		}
 
-		.search_bar span{
+		.search_bar span.mobile_sprite.search_icon{
 			background-position: -28px -31px;
 			width: 16px;
 			height: 16px;
@@ -333,6 +337,74 @@ nav, ul.m_top {
 			margin-top: -8px;
 			left: 2%;
 		}
+
+/*search_bar_suggestions*/
+
+	.search_bar_suggestions{
+		display: none;
+		position: absolute;
+		z-index: 2;
+		top: 30px;
+		left: 0;
+		background: #fff;
+		width: 96%;
+		margin: 0 2%;
+		height: auto;
+		font-size: 13px;
+		color: #aaa;
+		border: 1px solid #eee;
+		border-radius: 0 0 4px 4px;
+		text-align: left;
+		padding: 3px 0;
+	}
+		.search_bar_suggestions.active{
+			display: block;
+		}
+		.search_bar_suggestions li{
+		}
+		.search_bar_suggestions li a{
+			color: #222;
+			padding: 4px 5px 4px 8%;
+			font-weight: bold;
+			border-bottom: 1px solid #f5f5f5;
+			display: block;
+			font-size: 13px;
+			line-height: 22px;
+		}
+			.search_bar_suggestions  li:last-child a{
+				border-bottom: none;
+			}
+			.search_bar_suggestions li a span{
+				font-weight: normal;
+			}
+			.search_bar_suggestions li a span.arrow_icon{
+				float: right;
+				display: block;
+				padding: 4px;
+			}
+				.search_bar_suggestions li a span.arrow_icon span{
+					display: block;
+					background-position: -2px -71px;
+					width: 9px;
+					height: 9px;
+					margin-top: 4px;
+					opacity: 0.4;
+				}
+
+			.search_bar span.clean_icon{
+				position: absolute;
+				top: 4px;
+				right: 3px;
+				padding: 5px;
+				display: block;
+			}
+				.search_bar span.clean_icon span.mobile_sprite{
+					display: block;
+					width: 9px;
+					height: 8px;
+					background-position: -13px -71px;
+					opacity: 0.4;
+				}
 
 /*------------------------------------*\
     $SECTION_VIDEOS
