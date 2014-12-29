@@ -396,6 +396,9 @@ nav, ul.m_top {
 				top: 4px;
 				right: 3px;
 				padding: 5px;
+				display: none;
+			}
+			.search_bar span.clean_icon.active{
 				display: block;
 			}
 				.search_bar span.clean_icon span.mobile_sprite{
@@ -405,6 +408,10 @@ nav, ul.m_top {
 					background-position: -13px -71px;
 					opacity: 0.4;
 				}
+		.search_bar_suggestions img{
+			float: left;
+			margin: 0 10px 3px 0;
+		}
 
 /*------------------------------------*\
     $SECTION_VIDEOS
@@ -514,7 +521,22 @@ section.main_video_preview {
 
 	section.main_video_preview .video_preview {
 		position: relative;
+		display: block;
+		background: #000;
+		width: 100%;
 	}
+		section.main_video_preview .video_preview:before{
+		content: "";
+		display: block;
+		/*padding-top: 75%;
+		overflow: hidden;*/
+	}
+		section.main_video_preview .video_preview video{
+			width: 100%;
+			/*position: absolute;
+			top: 0;
+			left: 0;*/
+		}
 
 		section.main_video_preview .video_preview img {
 			width: 100%;

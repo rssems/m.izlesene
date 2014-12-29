@@ -5,13 +5,16 @@
 
 <section class="main_video_preview">
 	<div class="video_preview">
-	    <a href="#">
-	    <span class="playIcon"></span>
+	    <!-- <a href="#">
+	    	<span class="playIcon"></span>
 	    	<img src="images/img1.jpg" alt="img" />
-	  	</a>
+	  	</a> -->
+	  	<video>
+	  		 <source src="test.mp4" type="video/mp4"></source>
+	  	</video>
 
 	</div><!-- video_preview -->
-
+	<div class="clear"></div>
 	<div class="video_desc">
 		<div class="clear"></div>
 		<span class="desc-toggle active">
