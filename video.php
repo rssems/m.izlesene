@@ -5,13 +5,13 @@
 
 <section class="main_video_preview">
 	<div class="video_preview">
-	    <!-- <a href="#">
+	    <a href="#">
 	    	<span class="playIcon"></span>
 	    	<img src="images/img1.jpg" alt="img" />
-	  	</a> -->
-	  	<video>
+	  	</a>
+<!-- 	  	<video>
 	  		 <source src="test.mp4" type="video/mp4"></source>
-	  	</video>
+	  	</video> -->
 
 	</div><!-- video_preview -->
 	<div class="clear"></div>
@@ -31,6 +31,17 @@
 			<a href="#" title="Facebook'ta Paylaş"  class="fb_share"><span class="mobile_sprite"></span> <span class="fb_name">Facebook'ta </span>Paylas</a>
 		</div><!-- share -->
 		<div class="clear"></div>
+
+		<div class="share withTictoc">
+			<a href="#" title="Whatsappla"  class="w_share"><span class="mobile_sprite"></span> <span class="w_title">Whatsappla</span></a>
+			<a href="#" title="Tictocla"  class="tt_share"><span></span></a>
+			<a href="#" title="Tweetle" class="tw_share"><span class="mobile_sprite"></span> Tweetle</a>
+			<a href="#" title="Facebook'ta Paylaş"  class="fb_share"><span class="mobile_sprite"></span> <span class="fb_name">Facebook'ta </span>Paylas</a>
+		</div><!-- share -->
+		<div class="clear"></div>
+
+
+
 	</div><!-- video_desc -->
 	<div class="video_details">
 		<div class="details_more">

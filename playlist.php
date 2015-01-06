@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="css/playlist.css">
 <section class="playlist">
 	<span class="desc-toggle light active">
 		<span class="mobile_sprite"></span>
