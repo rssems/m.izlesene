@@ -11,18 +11,6 @@
 	</div>
 </div> -->
 <header>
-	<nav>
-		<ul class="m_top"  id="m_topID" >
-			<li><a href="#">MÜZİK <span></span></a></li>
-			<li><a href="#">KOMİK VİDEOLAR <span></span></a></li>
-			<li><a href="#">AMATÖR <span></span></a></li>
-			<li><a href="#">TV & MAGAZİN <span></span></a></li>
-			<li><a href="#">SPOR <span></span></a></li>
-			<li><a href="#">ARABALAR <span></span></a></li>
-			<li><a href="#">SİNEMA <span></span></a></li>
-			<li><a href="#">OYUN <span></span></a></li>	
-		</ul>
-	</nav>
 <!-- 	<a class="mobile_sprite icon-login" href="#" title="#">
 		Giriş Yap
 	</a> -->

@@ -1,4 +1,4 @@
-<link href="css/nav.css" rel="stylesheet" type="text/css">
+<!-- <link href="css/nav.css" rel="stylesheet" type="text/css"> -->
 
 <!-- nav -->
 <div class="clear"></div>
