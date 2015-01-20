@@ -1,6 +1,40 @@
 <link rel="stylesheet" href="css/similars.css">
+<div class="video_similars grid2_2 similarItem_wText">
+	<ul>
+		<li>
+			<a class="similarItem" href="http://www.google.com" style="background-image:url('http://i5.imgiz.com/rshots/7928/yellow-claw-till-it-hurts-ft-ayden_7928356-9997_1280x720.jpg');">
+			</a>
+		</li>
+		<li>
+			<a class="similarItem active" href="http://www.google.com">
+				<span class="content">
+					Miley Cyrus - Wrecking Ball Chatroulette
+					<span>126 izlenme</span>			
+				</span>
+			</a>
+		</li>
 
-<div class="video_similars grid2_1">
+		<li>
+			<div class="similarItem" hrefFake="http://www.google.com" style="background-image:url('http://i2.imgiz.com/rshots/7933/tom-boxer-morena-trompeta_7933329-2026_1280x720.jpg');">
+				<span class="content">
+					Miley Cyrus - Wrecking Ball Chatroulette
+					<span>126 izlenme</span>			
+				</span>
+			</div>
+		</li> 
+		<li>
+			<div class="similarItem active" hrefFake="http://www.google.com">
+				<span class="content">
+					Miley Cyrus - Wrecking Ball Chatroulette
+					<span>126 izlenme</span>			
+				</span>
+			</div>
+		</li> 
+	</ul>
+	<div class="clear"></div>
+</div>
+<!-- 
+<div class="video_similars grid2_2">
 	<ul>
 		<li>
 			<a class="similarItem active" href="http://www.google.com" style="background-image:url('http://i5.imgiz.com/rshots/7928/yellow-claw-till-it-hurts-ft-ayden_7928356-9997_1280x720.jpg');">
@@ -74,7 +108,7 @@
 					<span>126 izlenme</span>			
 				</span>
 			</a>
-		</li> <!--   -->
+		</li>
 	</ul>
 	<div class="clear"></div>
-</div>
+</div> -->

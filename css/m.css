@@ -343,12 +343,12 @@ h1.title{
 			.search_bar_suggestions li a span{
 				font-weight: normal;
 			}
-			.search_bar_suggestions li a span.arrow_icon{
+			.search_bar_suggestions li span.arrow_icon{
 				float: right;
 				display: block;
-				padding: 4px;
+				padding: 9px;
 			}
-				.search_bar_suggestions li a span.arrow_icon span{
+				.search_bar_suggestions li span.arrow_icon span{
 					display: block;
 					background-position: -2px -71px;
 					width: 9px;
@@ -359,9 +359,9 @@ h1.title{
 
 			.search_bar span.clean_icon{
 				position: absolute;
-				top: 4px;
-				right: 3px;
-				padding: 5px;
+				top: 0;
+				right: 0;
+				padding: 9px;
 				display: none;
 			}
 			.search_bar span.clean_icon.active{
@@ -849,7 +849,7 @@ section.other_pages hgroup h2 {
     $TV Yansit
 \*------------------------------------*/
 
-.tv_share{
+/*.tv_share{
 	position: relative;
 	margin-top: 10px;
 	display: block;
@@ -894,7 +894,7 @@ section.other_pages hgroup h2 {
 		.tvreflect_text{
 			margin-left: 8px;
 		}
-
+*/
 
 /*------------------------------------*\
     $Playlist
@@ -986,9 +986,6 @@ section.playlistVideos ul.videos{
 		}
 
 @media only screen and (min-width: 767px) {
-/*	section ul.videos {
-		margin-left: 3%;
-	}*/
 	section.playlistVideos ul.videos li{
 		width: 50%;
 		float: left;
