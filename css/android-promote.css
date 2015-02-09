@@ -11,28 +11,48 @@
 	background-color: #fff;
 	border-bottom:1px solid #efefef;
 }
-	.android-smartbanner img{
-		margin:9px 10px 0 32px;
-		float: left;
-		width: 57px;
-		height: 57px;
+	.android-smartbanner.videoPage{
+		height: auto;
+		margin:10px 0;
+		border: 1px solid #eee;
+		border-width: 1px 0 1px 0;
 	}
+	.android-smartbanner img.appIcon{
+		margin:10px 0 10px 10px;
+		float: left;
+		width: 40px;
+		height: 40px;
+	}
+		.android-smartbanner.videoPage img.appIcon{
+			margin-left: 8px;
+			margin-right: 0;
+		}
 
 .info-wrap{
 	float: left;
 	margin-top: 15px;
+	margin-left: 10px;
 }
+	.android-smartbanner.videoPage .info-wrap{
+		margin-top: 10px;
+		width: 110px;
+		width: calc(100% - 210px);
+	}
 	.info-wrap .title{
 		font-weight: bold;
 		font-size: 13px;
 		color: #333333;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		width: 100%;
 	}
 	.info-wrap .info{
 		font-size: 11px;
 		color: #aaa;
 		line-height: 15px;
 	}
-.android-smartbanner a{
+.android-smartbanner a.download{
 	border-radius: 2px;
 	height: 30px;
 	line-height: 30px;
@@ -47,8 +67,8 @@
 	margin-right: 10px;
 	margin-top: 22px;
 }
-	.android-smartbanner a:hover,
-	.android-smartbanner a:active{
+	.android-smartbanner a.download:hover,
+	.android-smartbanner a.download:active{
 		border-bottom: 0;
 		padding-top: 2px;
 		box-shadow: inset 0px 1px 1px 0px rgba(0,0,0,0.15);
@@ -66,6 +86,9 @@
 	background: rgba(0,0,0,0.3);
 	cursor:pointer;
 }
+	.videoPage.android-smartbanner .close{
+		display: none;
+	}
 	.android-smartbanner .close:hover,
 	.android-smartbanner .close:active{
 		background: rgba(0,0,0,1);
@@ -79,3 +102,11 @@
 		margin:7px;
 		background-size: 8px 8px;
 	}
+
+/*market*/
+.market {
+	float: right;
+	margin-right: 8px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}

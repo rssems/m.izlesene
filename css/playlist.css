@@ -30,7 +30,7 @@ section.playlist_group{
 				bottom: 0;
 				left: 0;
 				right: 0;
-				background: rgba(0,0,0,.6);
+				background: rgba(0,0,0,.5);
 				z-index: 2;
 			}
 			section.playlist_group ul li a h4{
@@ -43,5 +43,5 @@ section.playlist_group{
 				position: relative;
 				z-index: 3;
 				top: 18%;
-				letter-spacing: 2.5px;
+				letter-spacing: 1.5px;
 			}
