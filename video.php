@@ -55,7 +55,7 @@
 		</div>
 	</div>
 </section>
-<?php include "smart_banner.php"; ?>
+<!--  include "smart_banner.php";  -->
 <?php include "common/videos.php"; ?>
 <?php include "common/ad_320_50.php"; ?>
 

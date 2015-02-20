@@ -1004,5 +1004,24 @@ section.playlistVideos ul.videos{
 	opacity: 0.8;
 }
 
-
+/*------------------------------------*\
+    $TABLETS
+\*------------------------------------*/
+@media only screen and (min-width: 641px) {
+	.tablet{
+		width: 300px;
+		float: left;
+	}
+		section.tablet ul.videos{
+			margin-top: 0;
+		}
+	.main_video_preview{
+		width: 53%; /*fallback for calc*/
+		width: calc(100% - 300px);
+		float: left;
+	}
+	section.tablet ul.videos li{
+		width: 100%;
+	}
+}
 
